@@ -1,0 +1,67 @@
+{
+  "name": "cc-utils",
+  "version": "1.0.0",
+  "description": "A collection of utility functions for frontend development",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utils",
+    "utilities",
+    "clipboard",
+    "download",
+    "formdata",
+    "image",
+    "math",
+    "storage"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "antd": "^5.0.0",
+    "axios": "^1.6.0",
+    "jszip": "^3.10.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "antd": ">=4.0.0",
+    "axios": ">=1.0.0",
+    "jszip": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "antd": {
+      "optional": true
+    },
+    "axios": {
+      "optional": true
+    },
+    "jszip": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

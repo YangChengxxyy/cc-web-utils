@@ -1,0 +1,41 @@
+# Source files
+src/
+
+# Config files
+tsconfig.json
+.eslintrc
+.eslintrc.js
+.eslintrc.json
+.prettierrc
+.prettierrc.js
+.prettierrc.json
+.editorconfig
+
+# Development files
+*.log
+*.map
+.git/
+.gitignore
+.github/
+.vscode/
+.idea/
+
+# Test files
+__tests__/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+coverage/
+jest.config.js
+
+# Build tools
+rollup.config.js
+webpack.config.js
+vite.config.ts
+
+# Misc
+node_modules/
+.DS_Store
+Thumbs.db
+*.tgz
