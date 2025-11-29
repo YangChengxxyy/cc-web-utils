@@ -1,6 +1,6 @@
 {
   "name": "cc-web-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of utility functions for frontend development",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -58,10 +58,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YangChengxxyy/cc-utils"
+    "url": "https://github.com/YangChengxxyy/cc-web-utils"
   },
   "bugs": {
-    "url": "https://github.com/YangChengxxyy/cc-utils/issues"
+    "url": "https://github.com/YangChengxxyy/cc-web-utils/issues"
   },
-  "homepage": "https://github.com/YangChengxxyy/cc-utils"
+  "homepage": "https://github.com/YangChengxxyy/cc-web-utils"
 }

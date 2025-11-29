@@ -1,15 +1,15 @@
-# cc-utils
+# cc-web-utils
 
 一个实用的前端工具函数库，包含剪贴板、文件处理、下载、图片处理等常用工具函数。
 
 ## 安装
 
 ```bash
-npm install cc-utils
+npm install cc-web-utils
 # 或
-yarn add cc-utils
+yarn add cc-web-utils
 # 或
-pnpm add cc-utils
+pnpm add cc-web-utils
 ```
 
 ## 可选依赖
@@ -32,13 +32,13 @@ npm install axios antd
 ### ES Module
 
 ```typescript
-import { copyToClipboard, formatStorage, getImageDimensions } from 'cc-utils';
+import { copyToClipboard, formatStorage, getImageDimensions } from 'cc-web-utils';
 ```
 
 ### CommonJS
 
 ```javascript
-const { copyToClipboard, formatStorage } = require('cc-utils');
+const { copyToClipboard, formatStorage } = require('cc-web-utils');
 ```
 
 ## API 文档
@@ -50,7 +50,7 @@ const { copyToClipboard, formatStorage } = require('cc-utils');
 复制文本到剪贴板，支持 HTTPS 和非安全环境。
 
 ```typescript
-import { copyToClipboard } from 'cc-utils';
+import { copyToClipboard } from 'cc-web-utils';
 
 copyToClipboard('要复制的文本');
 ```
@@ -62,7 +62,7 @@ copyToClipboard('要复制的文本');
 将对象转换为 FormData，支持嵌套对象和文件数组。
 
 ```typescript
-import { createFormData } from 'cc-utils';
+import { createFormData } from 'cc-web-utils';
 
 const formData = createFormData({
   name: '张三',
@@ -78,7 +78,7 @@ const formData = createFormData({
 向现有 FormData 追加数据，支持嵌套对象。
 
 ```typescript
-import { appendFormData } from 'cc-utils';
+import { appendFormData } from 'cc-web-utils';
 
 const formData = new FormData();
 appendFormData(formData, { name: '张三', age: 18 });
@@ -89,7 +89,7 @@ appendFormData(formData, { name: '张三', age: 18 });
 处理文件字段，将文件数组转换为 FormData。
 
 ```typescript
-import { dealFileKey } from 'cc-utils';
+import { dealFileKey } from 'cc-web-utils';
 
 const formData = dealFileKey({ images: [file1, file2] }, 'images');
 ```
@@ -101,7 +101,7 @@ const formData = dealFileKey({ images: [file1, file2] }, 'images');
 通用文件下载函数，支持从 Axios 响应中下载文件。
 
 ```typescript
-import { download } from 'cc-utils';
+import { download } from 'cc-web-utils';
 
 await download(
   (config) => axios.get('/api/download', config),
@@ -114,7 +114,7 @@ await download(
 下载单张图片。
 
 ```typescript
-import { downloadImg } from 'cc-utils';
+import { downloadImg } from 'cc-web-utils';
 
 await downloadImg('https://example.com/image.png', 'my-image.png');
 ```
@@ -124,7 +124,7 @@ await downloadImg('https://example.com/image.png', 'my-image.png');
 批量下载图片并打包为 ZIP 文件。
 
 ```typescript
-import { downloadImagesAsZip } from 'cc-utils';
+import { downloadImagesAsZip } from 'cc-web-utils';
 
 await downloadImagesAsZip(
   [
@@ -142,7 +142,7 @@ await downloadImagesAsZip(
 获取图片的原始尺寸。
 
 ```typescript
-import { getImageDimensions } from 'cc-utils';
+import { getImageDimensions } from 'cc-web-utils';
 
 const { width, height } = await getImageDimensions('https://example.com/image.png');
 console.log(`图片尺寸: ${width} x ${height}`);
@@ -155,7 +155,7 @@ console.log(`图片尺寸: ${width} x ${height}`);
 格式化存储大小，返回 MB 或 GB 单位的字符串。
 
 ```typescript
-import { formatStorage } from 'cc-utils';
+import { formatStorage } from 'cc-web-utils';
 
 formatStorage(1024 * 1024);      // '1MB'
 formatStorage(1024 * 1024 * 1024); // '1GB'
@@ -168,7 +168,7 @@ formatStorage(1024 * 1024 * 1024); // '1GB'
 将弧度转换为角度。
 
 ```typescript
-import { radiansToDegrees } from 'cc-utils';
+import { radiansToDegrees } from 'cc-web-utils';
 
 radiansToDegrees(Math.PI); // 180
 ```
@@ -178,7 +178,7 @@ radiansToDegrees(Math.PI); // 180
 将角度转换为弧度。
 
 ```typescript
-import { degreesToRadians } from 'cc-utils';
+import { degreesToRadians } from 'cc-web-utils';
 
 degreesToRadians(180); // Math.PI
 ```
