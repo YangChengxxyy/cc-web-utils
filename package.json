@@ -1,5 +1,5 @@
 {
-  "name": "cc-utils",
+  "name": "cc-web-utils",
   "version": "1.0.0",
   "description": "A collection of utility functions for frontend development",
   "main": "dist/index.js",
@@ -31,7 +31,7 @@
     "math",
     "storage"
   ],
-  "author": "",
+  "author": "yangchengxxyy",
   "license": "MIT",
   "devDependencies": {
     "antd": "^5.0.0",
@@ -58,10 +58,10 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/YangChengxxyy/cc-utils"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/YangChengxxyy/cc-utils/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/YangChengxxyy/cc-utils"
 }
